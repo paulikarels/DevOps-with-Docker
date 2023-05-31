@@ -1,0 +1,3 @@
+# Application worked properly even without any changes, but here is the command with needed updates and intallations if needed.
+
+docker run -i ubuntu sh -c 'apt-get update && apt-get upgrade; apt-get -y install curl; echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
