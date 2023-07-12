@@ -1,0 +1,7 @@
+FROM ubuntu:18.04
+
+WORKDIR /mydir
+RUN apt-get update && apt-get install -y libc6-dev
+
+
+CMD printf "Give first real number: "; read -r num1; printf "Give second real number: "; read -r num2; printf "The distance between two given numbers: "; echo $(($num1-$num2));
